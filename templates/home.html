@@ -1,18 +1,52 @@
 {% extends 'base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} Home Page {% endblock title %}</title>
-</head>
-<body>
-    {% block content %}  
-    <h1>
-        Home Page
-    </h1>
-    {% endblock content %}
-</body>
-</html>
+{% block title %} طراحی سایت {% endblock title %}
+
+{% block content %}
+<header class="hdr">
+    <img src="{% static 'images/bk.webp' %}" alt="">
+    <div class="hdr-ovr"></div>
+    <div class="gif-box">
+        <div class="gif-hold">
+            <img src="{% static 'images/key.gif' %}" alt="Animation">
+        </div>
+    </div>
+    <div class="hdr-con">
+        <h1 class="txt-mn">
+            طراحی سایت <span class="txt-hl">مدرن</span> و <span class="txt-hl">حرفه‌ای</span>
+        </h1>
+        <p class="txt-sb">
+            ما با استفاده از جدیدترین تکنولوژی‌های روز دنیا، وبسایت‌هایی طراحی می‌کنیم که نه تنها زیبا هستند، بلکه
+            عملکرد بهینه‌ای دارند. طراحی ریسپانسیو، سئو پیشرفته و رابط کاربری مدرن از ویژگی‌های کارهای ماست.
+        </p>
+        <button class="btn-hdr" id="btnHdr">
+            <span class="btn-txt">دریافت مشاوره</span>
+        </button>
+    </div>
+</header>
+<section class="sec-prj">
+    <h2 class="ttl-sec">پروژه‌های موفق ما</h2>
+    <div class="box-sts">
+        <div class="itm-st">
+            <span class="num-st" id="cntPrj">0</span>
+            <span class="lbl-st">پروژه تکمیل شده</span>
+        </div>
+        <div class="itm-st">
+            <span class="num-st" id="cntCli">0</span>
+            <span class="lbl-st">مشتری راضی</span>
+        </div>
+        <div class="itm-st">
+            <span class="num-st" id="cntExp">0</span>
+            <span class="lbl-st">سال تجربه</span>
+        </div>
+        <div class="itm-st">
+            <span class="num-st" id="cntSup">0</span>
+            <span class="lbl-st">پشتیبانی 24/7</span>
+        </div>
+    </div>
+    <div class="btn-ovl" id="btnAct">
+        <span class="btn-txt">شروع پروژه جدید</span>
+    </div>
+</section>
+{% endblock content %}

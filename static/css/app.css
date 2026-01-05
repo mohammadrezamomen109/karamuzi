@@ -25,20 +25,18 @@ body {
     overflow: hidden;
 }
 
-/* عکس بک‌گراند */
 .hdr > img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;           /* عکس رو تمام صفحه می‌کنه */
+    object-fit: cover;
     filter: blur(5px) brightness(0.7);
     transform: scale(1.05);
-    z-index: 1;                  /* پشت همه */
+    z-index: 1;
 }
 
-/* اورلی تاریک روی عکس */
 .hdr-ovr {
     position: absolute;
     top: 0;
@@ -49,10 +47,9 @@ body {
     z-index: 2;
 }
 
-/* محتوای هدر */
 .hdr-con {
     position: relative;
-    z-index: 3;                  /* بالای عکس و اورلی */
+    z-index: 3;
     padding: 0 80px;
     max-width: 60%;
     color: #fff;

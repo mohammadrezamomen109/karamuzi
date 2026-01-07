@@ -4,49 +4,310 @@
 {% block title %} طراحی سایت {% endblock title %}
 
 {% block content %}
-<header class="hdr">
-    <img src="{% static 'images/bk.webp' %}" alt="">
-    <div class="hdr-ovr"></div>
-    <div class="gif-box">
-        <div class="gif-hold">
-            <img src="{% static 'images/key.gif' %}" alt="Animation">
+<nav class="nav-g">
+    <div class="nav-g-c">
+        <div class="nav-g-i">
+            <a href="#" class="nav-g-lnk"><i class="fas fa-home"></i></a>
+            <a href="#" class="nav-g-lnk"><i class="fas fa-graduation-cap"></i></a>
+            <a href="#" class="nav-g-lnk"><i class="fas fa-briefcase"></i></a>
+            <a href="#" class="nav-g-lnk"><i class="fas fa-phone"></i></a>
         </div>
     </div>
-    <div class="hdr-con">
-        <h1 class="txt-mn">
-            طراحی سایت <span class="txt-hl">مدرن</span> و <span class="txt-hl">حرفه‌ای</span>
-        </h1>
-        <p class="txt-sb">
-            ما با استفاده از جدیدترین تکنولوژی‌های روز دنیا، وبسایت‌هایی طراحی می‌کنیم که نه تنها زیبا هستند، بلکه
-            عملکرد بهینه‌ای دارند. طراحی ریسپانسیو، سئو پیشرفته و رابط کاربری مدرن از ویژگی‌های کارهای ماست.
-        </p>
-        <button class="btn-hdr" id="btnHdr">
-            <span class="btn-txt">دریافت مشاوره</span>
-        </button>
+</nav>
+
+
+<header class="hdr">
+    <div class="hdr-eff" id="hdrEff"></div>
+    <div class="hdr-c">
+        <div class="hdr-con">
+            <h1 class="txt-m">
+                طراحی سایت <span class="txt-h">مدرن</span> و <span class="txt-h">حرفه‌ای</span>
+            </h1>
+            <p class="txt-s">
+                ما با استفاده از جدیدترین تکنولوژی‌های روز دنیا، وبسایت‌هایی طراحی می‌کنیم که نه تنها زیبا هستند، بلکه
+                عملکرد بهینه‌ای دارند.
+            </p>
+            <div class="hdr-btn-g">
+                <button class="btn-h" id="btnH">
+                    <span class="btn-t">دریافت مشاوره</span>
+                </button>
+                <button class="btn-h btn-h-w" id="btnH2">
+                    <span class="btn-t">شروع پروژه</span>
+                </button>
+            </div>
+        </div>
     </div>
 </header>
-<section class="sec-prj">
-    <h2 class="ttl-sec">پروژه‌های موفق ما</h2>
-    <div class="box-sts">
-        <div class="itm-st">
-            <span class="num-st" id="cntPrj">0</span>
-            <span class="lbl-st">پروژه تکمیل شده</span>
+
+
+<section class="sec-p">
+    <div class="lns-bg" id="lnsBg"></div>
+    <h2 class="ttl-s">پروژه‌های موفق ما</h2>
+
+    <div class="box-s">
+        <div class="itm-s">
+            <span class="num-s" id="cntP">0</span>
+            <span class="lbl-s">پروژه تکمیل شده</span>
         </div>
-        <div class="itm-st">
-            <span class="num-st" id="cntCli">0</span>
-            <span class="lbl-st">مشتری راضی</span>
+
+        <div class="itm-s">
+            <span class="num-s" id="cntC">0</span>
+            <span class="lbl-s">مشتری راضی</span>
         </div>
-        <div class="itm-st">
-            <span class="num-st" id="cntExp">0</span>
-            <span class="lbl-st">سال تجربه</span>
+
+        <div class="itm-s">
+            <span class="num-s" id="cntE">0</span>
+            <span class="lbl-s">سال تجربه</span>
         </div>
-        <div class="itm-st">
-            <span class="num-st" id="cntSup">0</span>
-            <span class="lbl-st">پشتیبانی 24/7</span>
+
+        <div class="itm-s">
+            <span class="num-s" id="cntS">0</span>
+            <span class="lbl-s">پشتیبانی 24/7</span>
         </div>
     </div>
-    <div class="btn-ovl" id="btnAct">
-        <span class="btn-txt">شروع پروژه جدید</span>
+
+    <div class="btn-o" id="btnA">
+        <span class="btn-t">شروع پروژه جدید</span>
     </div>
 </section>
+
+
+<section class="sec-r">
+    <div class="rev-c">
+        <h2 class="ttl-s">نظرات مشتریان</h2>
+        <p class="txt-s rev-s">تجربه همکاران ما با تیم طراحی سایت</p>
+
+        <div class="rev-sld">
+            <div class="sld-t">
+                <div class="rev-sd sd-act" data-idx="0">
+                    <div class="rev-card">
+                        <div class="rev-img">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="مشتری">
+                        </div>
+                        <div class="rev-con">
+                            <h3 class="rev-nam">علیرضا محمدی</h3>
+                            <p class="rev-job">مدیر عامل شرکت نوآوران</p>
+                            <div class="rev-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="rev-txt">
+                                طراحی سایت توسط این تیم تحول بزرگی در کسب و کار ما ایجاد کرد. سرعت لود بالا و رابط
+                                کاربری عالی باعث افزایش مشتریان ما شد.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rev-sd" data-idx="1">
+                    <div class="rev-card">
+                        <div class="rev-img">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="مشتری">
+                        </div>
+                        <div class="rev-con">
+                            <h3 class="rev-nam">فاطمه کریمی</h3>
+                            <p class="rev-job">مدیر فروشگاه اینترنتی</p>
+                            <div class="rev-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="rev-txt">
+                                پشتیبانی 24 ساعته و طراحی ریسپانسیو عالی باعث شد موبایل فروش ما 40% افزایش پیدا کند.
+                                واقعا حرفه‌ای هستند.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rev-sd" data-idx="2">
+                    <div class="rev-card">
+                        <div class="rev-img">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="مشتری">
+                        </div>
+                        <div class="rev-con">
+                            <h3 class="rev-nam">محمد حسینی</h3>
+                            <p class="rev-job">استارتاپ فناوری</p>
+                            <div class="rev-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="rev-txt">
+                                سئو فوق‌العاده و سرعت بالای سایت نتیجه همکاری ما با این تیم بود. در کمتر از 3 ماه به
+                                صفحه اول گوگل رسیدیم.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rev-sd" data-idx="3">
+                    <div class="rev-card">
+                        <div class="rev-img">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="مشتری">
+                        </div>
+                        <div class="rev-con">
+                            <h3 class="rev-nam">سارا نوروزی</h3>
+                            <p class="rev-job">مدیر برندینگ</p>
+                            <div class="rev-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="rev-txt">
+                                طراحی مدرن و خلاقانه سایت ما کاملا مطابق با برندینگ ما بود. تیم بسیار با تجربه و متعهدی
+                                هستند.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sld-nav">
+                <button class="nav-btn prev">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="sld-dots">
+                    <span class="dot act" data-idx="0"></span>
+                    <span class="dot" data-idx="1"></span>
+                    <span class="dot" data-idx="2"></span>
+                    <span class="dot" data-idx="3"></span>
+                </div>
+                <button class="nav-btn next">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="sec-f">
+    <div class="frm-c">
+        <div class="frm-info">
+            <h2 class="ttl-s">تماس با ما</h2>
+            <p class="txt-s">برای مشاوره رایگان و دریافت خدمات با ما در تماس باشید</p>
+
+            <div class="cnt-i">
+                <div class="cnt-item">
+                    <div class="cnt-t">
+                        <h4>تلفن تماس</h4>
+                        <p>021-12345678</p>
+                        <p>0912-345-6789</p>
+                    </div>
+                </div>
+
+                <div class="cnt-item">
+                    <div class="cnt-t">
+                        <h4>ایمیل</h4>
+                        <p>info@webdesign.com</p>
+                        <p>support@webdesign.com</p>
+                    </div>
+                </div>
+
+                <div class="cnt-item">
+                    <div class="cnt-t">
+                        <h4>آدرس</h4>
+                        <p>تهران، خیابان ولیعصر، پلاک 123</p>
+                        <p>ساعت کاری: 9 صبح تا 5 عصر</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="frm-box">
+            <form class="frm-m" id="cntFrm">
+                <div class="frm-g">
+                    <input type="text" id="frm-n" class="frm-in" placeholder="نام و نام خانوادگی" required>
+                </div>
+
+                <div class="frm-g">
+                    <input type="email" id="frm-e" class="frm-in" placeholder="آدرس ایمیل" required>
+                </div>
+
+                <div class="frm-g">
+                    <input type="tel" id="frm-t" class="frm-in" placeholder="شماره تماس">
+                </div>
+
+                <div class="frm-g">
+                    <select id="frm-s" class="frm-sel">
+                        <option value="">انتخاب موضوع</option>
+                        <option value="design">طراحی سایت</option>
+                        <option value="seo">سئو و بهینه‌سازی</option>
+                        <option value="support">پشتیبانی</option>
+                        <option value="other">سایر</option>
+                    </select>
+                </div>
+
+                <div class="frm-g">
+                    <textarea id="frm-msg" class="frm-txt" placeholder="پیام شما..." rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-f">
+                    <span class="btn-t">ارسال پیام</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<footer class="ftr">
+    <div class="ftr-c">
+        <div class="ftr-col">
+            <h3 class="ftr-t">طراحی سایت</h3>
+            <p class="ftr-txt">
+                تخصص ما در طراحی سایت‌های مدرن، ریسپانسیو و بهینه برای موتورهای جستجو است.
+            </p>
+            <div class="ftr-soc">
+                <a href="#" class="soc-lnk"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="soc-lnk"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="soc-lnk"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="soc-lnk"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="ftr-col">
+            <h3 class="ftr-t">لینک‌های سریع</h3>
+            <ul class="ftr-lst">
+                <li><a href="#" class="ftr-lnk">خانه</a></li>
+                <li><a href="#" class="ftr-lnk">آموزشی</a></li>
+                <li><a href="#" class="ftr-lnk">نمونه کارها</a></li>
+                <li><a href="#" class="ftr-lnk">تماس با ما</a></li>
+            </ul>
+        </div>
+
+        <div class="ftr-col">
+            <h3 class="ftr-t">خدمات ما</h3>
+            <ul class="ftr-lst">
+                <li><a href="#" class="ftr-lnk">طراحی سایت</a></li>
+                <li><a href="#" class="ftr-lnk">سئو و بهینه‌سازی</a></li>
+                <li><a href="#" class="ftr-lnk">طراحی لوگو</a></li>
+                <li><a href="#" class="ftr-lnk">پشتیبانی سایت</a></li>
+            </ul>
+        </div>
+
+        <div class="ftr-col">
+            <h3 class="ftr-t">خبرنامه</h3>
+            <p class="ftr-txt">برای دریافت آخرین تخفیف‌ها و مقالات ایمیل خود را وارد کنید.</p>
+            <div class="ftr-sub">
+                <input type="email" placeholder="ایمیل شما" class="sub-in">
+                <button class="sub-btn">ارسال</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="ftr-b">
+        <p class="ftr-cpr">© 2026 تمامی حقوق محفوظ است.</p>
+    </div>
+</footer>
 {% endblock content %}

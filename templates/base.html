@@ -6,10 +6,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>طراحی سایت</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vazirmatn/moon@latest/font-face.css">
+    <title>وبلاگ</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 
@@ -17,16 +21,42 @@
 
     {% block navbar %}
 
-    <nav class="nav-g">
-        <div class="nav-g-c">
-            <div class="nav-g-i">
-                <a href="#" class="nav-g-lnk"><i class="fas fa-home"></i></a>
-                <a href="#" class="nav-g-lnk"><i class="fas fa-graduation-cap"></i></a>
-                <a href="#" class="nav-g-lnk"><i class="fas fa-briefcase"></i></a>
-                <a href="#" class="nav-g-lnk"><i class="fas fa-phone"></i></a>
-            </div>
+    <!-- Back to top -->
+    <div class="back-top-btn" id="backTopBtn">
+        <i class="ri-arrow-up-line"></i>
+    </div>
+
+    <!-- Search box -->
+    <div class="search-nav-box">
+        <div class="search-box-main">
+            <input type="text" class="search-input-field" placeholder="جستجو...">
+            <button class="search-btn-main">
+                <i class="ri-search-line"></i>
+            </button>
         </div>
-    </nav>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navbar-cont-main">
+        <nav class="navbar-menu">
+            <div class="nav-menu-item active" data-content="خانه">
+                <i class="ri-home-5-line nav-menu-icon"></i>
+                <div class="tooltip-text">خانه</div>
+            </div>
+            <div class="nav-menu-item" data-content="آموزش">
+                <i class="ri-graduation-cap-line nav-menu-icon"></i>
+                <div class="tooltip-text">آموزش</div>
+            </div>
+            <div class="nav-menu-item" data-content="نمونه کار">
+                <i class="ri-briefcase-line nav-menu-icon"></i>
+                <div class="tooltip-text">نمونه کار</div>
+            </div>
+            <div class="nav-menu-item" data-content="درباره ما">
+                <i class="ri-information-line nav-menu-icon"></i>
+                <div class="tooltip-text">درباره ما</div>
+            </div>
+        </nav>
+    </div>
 
     {% endblock navbar %}
 
@@ -89,6 +119,12 @@
     {% endblock footer %}
 
     <script src="{% static 'js/home.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{% static 'js/blog.js' %}"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

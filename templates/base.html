@@ -15,9 +15,23 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
+
+    {% if messages %}
+    <script>
+        Swal.fire({
+            title: "موفقیت",
+            text: "{% for msg in messages %}{{ msg }}{% endfor %}",
+            icon: "success",
+            confirmButtonText: "باشه"
+        });
+    </script>
+    {% endif %}
+
+
 
     {% block navbar %}
 

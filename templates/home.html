@@ -11,23 +11,23 @@
 
     <div class="box-s">
         <div class="itm-s">
-            <span class="num-s" id="cntP">0</span>
+            <span class="num-s" id="cntP">{{ information.projects }}</span>
             <span class="lbl-s">پروژه تکمیل شده</span>
         </div>
 
         <div class="itm-s">
-            <span class="num-s" id="cntC">0</span>
+            <span class="num-s" id="cntC">{{ information.customers }}</span>
             <span class="lbl-s">مشتری راضی</span>
         </div>
 
         <div class="itm-s">
-            <span class="num-s" id="cntE">0</span>
+            <span class="num-s" id="cntE">{{ information.experience }}</span>
             <span class="lbl-s">سال تجربه</span>
         </div>
 
         <div class="itm-s">
-            <span class="num-s" id="cntS">0</span>
-            <span class="lbl-s">پشتیبانی 24/7</span>
+            <span class="num-s" id="cntS">{{ information.admin }}%</span>
+            <span class="lbl-s">پشتیبانی</span>
         </div>
     </div>
 
@@ -190,21 +190,23 @@
         </div>
 
         <div class="frm-box">
-            <form class="frm-m" id="cntFrm">
+            <form class="frm-m" id="cntFrm" method="POST">
+                {% csrf_token %}
+
                 <div class="frm-g">
-                    <input type="text" id="frm-n" class="frm-in" placeholder="نام و نام خانوادگی" required>
+                    <input type="text" id="frm-n" name="name" class="frm-in" placeholder="نام و نام خانوادگی" required>
                 </div>
 
                 <div class="frm-g">
-                    <input type="email" id="frm-e" class="frm-in" placeholder="آدرس ایمیل" required>
+                    <input type="email" id="frm-e" name="email" class="frm-in" placeholder="آدرس ایمیل" required>
                 </div>
 
                 <div class="frm-g">
-                    <input type="tel" id="frm-t" class="frm-in" placeholder="شماره تماس">
+                    <input type="tel" id="frm-t" name="phone" class="frm-in" placeholder="شماره تماس">
                 </div>
 
                 <div class="frm-g">
-                    <select id="frm-s" class="frm-sel">
+                    <select id="frm-s" name="subject" class="frm-sel">
                         <option value="">انتخاب موضوع</option>
                         <option value="design">طراحی سایت</option>
                         <option value="seo">سئو و بهینه‌سازی</option>
@@ -214,7 +216,8 @@
                 </div>
 
                 <div class="frm-g">
-                    <textarea id="frm-msg" class="frm-txt" placeholder="پیام شما..." rows="4" required></textarea>
+                    <textarea id="frm-msg" name="message" class="frm-txt" placeholder="پیام شما..." rows="4"
+                        required></textarea>
                 </div>
 
                 <button type="submit" class="btn-f">
@@ -222,6 +225,7 @@
                 </button>
             </form>
         </div>
+
     </div>
 </section>
 
